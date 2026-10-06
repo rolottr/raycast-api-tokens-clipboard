@@ -1,0 +1,51 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-tokens",
+  "title": "Token Clipboard",
+  "description": "Find and reuse API keys copied to the clipboard.",
+  "icon": "icon.png",
+  "author": "rolottr",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "token-clipboard",
+      "title": "Token Clipboard",
+      "description": "Filter API keys from existing clipboard items.",
+      "mode": "view",
+      "icon": "icon.png"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^2.6.3"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.0.0",
+    "@vitest/coverage-v8": "^5.0.3",
+    "eslint": "^9.28.0",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.5.3",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.8.3",
+    "vitest": "^5.0.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "test:coverage": "vitest run --coverage",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}

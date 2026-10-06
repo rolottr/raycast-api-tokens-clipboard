@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/
+coverage/
+raycast-env.d.ts
+.DS_Store
+*.rayconfig
